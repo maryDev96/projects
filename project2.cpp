@@ -291,7 +291,6 @@ public:
 	{
 		if (node == NULL)
 			return;
-		//cout << "\nDeleting tree" << endl;
 		delete_tree(node->left);
 		delete_tree(node->right);
 		delete node;
@@ -303,12 +302,6 @@ public:
 			return;
 		delete_tree(root);
 	}
-
-	//~BST()
-	//{
-	//	cout << "\nDesctructor!" << endl;
-	//	delete_tree(root);
-	//}
 };
 
 const int start = -2000;
